@@ -13,6 +13,9 @@
   padding: 0;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 html {
   font-size: 62.5%;
 }
@@ -25,6 +28,9 @@ body {
     font-size: 2rem;
     background-color: rgb(255, 255, 255);
     font-family: 'Lato', serif;
+}
+.white {
+  color: white;
 }
 .navbar {
   position: fixed;
@@ -145,9 +151,58 @@ body {
 .contain {
   width: 70%;
   margin: 0 auto;
-  padding-top: 20rem;
+  padding-top: 15rem;
   padding-bottom: 20rem;
 }
+/* Learn More */
+#learn-more {
+  background-color: blueviolet;
+}
+.learn-more-head {
+  font-size: 6.5rem;
+  text-align: center;
+  margin-bottom: 8rem;
+  color: lavender;
+  font-weight: bold;
+}
+.learn-more-option-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.learn-more-info-box {
+  width: 50rem;
+  background-color: #7370a5;
+  box-shadow: 5px 3px 11px 3px #00000033;
+  cursor: pointer;
+  transition: 200ms;
+  color: lavender;
+}
+.learn-more-info-box:hover {
+  transform: scale(1.04);
+}
+.info-box-head {
+  font-size: 3rem;
+  background-color: black;
+  padding: 2rem 1rem;
+  font-weight: bold;
+}
+.info-box-content {
+  padding: 5rem;
+  background-image: linear-gradient(to right, #88b1b7 ,#3a2180);
+}
+.info-student-box {
+  background-image: linear-gradient(to left, #88b1b7 ,#3a2180);
+}
+.info-box-icon {
+  font-size: 15rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.info-box-role {
+  font-size: 4rem;
+}
+/* Options */
 .void-greatness-box {
   position: relative;
   height: 41rem;
@@ -159,7 +214,7 @@ body {
   font-size: 6rem;
   margin: 0 auto;
   margin-bottom: 7rem;
-  width: 43rem;
+  width: 42rem;
 }
 .women-wrapper {
   display: flex;
@@ -167,7 +222,7 @@ body {
 }
 .void-greatness-text {
   font-size: 2rem;
-  width: 43rem;
+  width: 42rem;
   margin: 0 auto;
 }
 .void-greatness-img {
@@ -181,12 +236,20 @@ body {
 .respect-women-img {
   background-image: url('./alice-donovan-rouse-1TqTPPz3xpg-unsplash.jpg');
 }
+.eat-food-img {
+  background-image: url('./eaters-collective-12eHC6FxPyg-unsplash.jpg');
+}
 .hugging-img {
   background-image: url('./priscilla-du-preez-9vHPCKymSh0-unsplash.jpg');
 }
 .void-text-wrapper {
   width: 49%;
   color: white;
+}
+.option-header {
+  font-size: 6rem;
+  margin-bottom: 6rem;
+  font-weight: bold;
 }
 .secondary-color {
   background-color: #6153f5;
@@ -196,5 +259,23 @@ body {
   margin-top: -5rem;
   background-color: #6153f5;
   clip-path: polygon(50% 38%, 0% 100%, 100% 100%);
-
+}
+/* Student specific */
+.dots-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35rem;
+  justify-content: space-evenly;
+  color: #202020;
+}
+.dot-small {
+  font-size: 5rem; 
+}
+.dot-med {
+  font-size: 6rem;
+}
+.dot-large {
+  font-size: 7rem;
 }
