@@ -26,7 +26,7 @@ canvas {
 body {
     color: rgb(0, 0, 0);
     font-size: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #EAE8FF;
     font-family: 'Lato', serif;
 }
 .white {
@@ -45,7 +45,7 @@ body {
 }
 .navbar-solid {
   background-image: unset;
-  background-color: rgb(58, 33, 128);
+  background-color: #B7D3F2;
 }
 .flexy {
   display: flex;
@@ -56,18 +56,18 @@ body {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
-  color: white;
+  color: #252942;
 }
 .void-logo:hover{
-  fill: #92cfe6;
+  fill: #B7D3F2;
 }
 .flex-pages-item:hover {
-  color: #92cfe6;
+  color: #B7D3F2;
 }
 .void-logo {
   height: 3.5rem;
   width: 3.5rem;
-  fill: lavender;
+  fill: #EAE8FF;
   animation-name: spin;
   animation-duration: 500ms;
   animation-iteration-count: 2;
@@ -93,14 +93,13 @@ body {
 .title {
   font-size: 9rem;
   font-weight: 700;
-  text-shadow: 2px 2px 5px lavender;
-  font-family: 'Expletus Sans', cursive;
+  text-shadow: 2px 2px 5px #B7D3F2;
+
 }
 .heading-box{
     padding-top: 42vh;
     height: 90rem;
     text-align: center;
-
 }
   #site-name.show span{
     opacity: 1;
@@ -116,8 +115,6 @@ body {
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     transform: translate(0, 0);
-
-    
   }
   #site-name span {
     transition: opacity .5s ease-out, transform .5s ease-out;
@@ -125,7 +122,7 @@ body {
     display: inline-block;
     opacity: 0;
     transform: scale(1.9,1.9);
-    color: white;
+    color: #EAE8FF;
   }
 #site-name.show .c5 {
   margin-right: 7.5rem;
@@ -140,11 +137,11 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #201c5e;
+  background-color: #260843;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: 
-  linear-gradient(to bottom, #000000, rgb(58, 33, 128), #000000); 
+  linear-gradient(to bottom, #050303, #260843, #050303); 
 }
 
 /* Scroll down */
@@ -156,13 +153,13 @@ body {
 }
 /* Learn More */
 #learn-more {
-  background-color: blueviolet;
+  background-color: #050303;
 }
 .learn-more-head {
   font-size: 6.5rem;
   text-align: center;
   margin-bottom: 8rem;
-  color: lavender;
+  color: #EAE8FF;
   font-weight: bold;
 }
 .learn-more-option-wrap {
@@ -172,7 +169,7 @@ body {
 }
 .learn-more-info-box {
   width: 50rem;
-  background-color: #7370a5;
+  background-color: #252942;
   box-shadow: 5px 3px 11px 3px #00000033;
   cursor: pointer;
   transition: 200ms;
@@ -278,4 +275,12 @@ body {
 }
 .dot-large {
   font-size: 7rem;
+}
+hr{
+  margin-top: 2rem; 
+  width: 80%; 
+  margin-left: 10%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #EAE8FF, rgba(0, 0, 0, 0));
 }
