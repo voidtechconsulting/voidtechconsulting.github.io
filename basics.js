@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("navbar").classList.add("navbar-solid");
   } else {
     document.getElementById("navbar").classList.remove("navbar-solid");
@@ -75,3 +75,12 @@ particlesJS("particles-js", {
   };
   requestAnimationFrame(update);
   document.querySelector('#site-name').classList.add("show");
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
