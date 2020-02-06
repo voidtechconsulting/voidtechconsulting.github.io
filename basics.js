@@ -32,10 +32,10 @@ function stopSpinny() {
 particlesJS("particles-js", {
     particles: {
       number: { value: 500, density: { enable: true, value_area: 800 } },
-      color: { value: "#ffffff" },
+      color: { value: "#EAE8FF" },
       shape: {
         type: "circle",
-        stroke: { width: 0, color: "#00000" },
+        stroke: { width: 0, color: "#EAE8FF" },
         polygon: { nb_sides: 5 }
       },
       opacity: {
@@ -51,7 +51,7 @@ particlesJS("particles-js", {
       line_linked: {
         enable: false,
         distance: 150,
-        color: "#ffffff",
+        color: "#EAE8FF",
         opacity: 0.4,
         width: 1
       },
