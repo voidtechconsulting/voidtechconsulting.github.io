@@ -1,11 +1,25 @@
 window.onscroll = function() {scrollFunction()};
-
+var loadTimeline = true;
+var loadCommunity = true;
+var loadLearnMore = true;
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("navbar").classList.add("navbar-solid");
   } else {
     document.getElementById("navbar").classList.remove("navbar-solid");
   }
+  loadTimeline = checkInView(loadTimeline, "timeline", ".timeline-box__side", "comeIn");
+  loadCommunity = checkInView(loadCommunity, "mission", ".mission-box", "comeIn")
+  loadLearnMore = checkInView(loadLearnMore, "learn-more", ".info-box-content", "comeIn")
+}
+function checkInView(notInView, section, box, anime) {
+  if (notInView && document.getElementById(section).getBoundingClientRect().top + 100 < document.documentElement.clientHeight) {
+    document.querySelectorAll(box).forEach((el) => {
+      el.classList.add(anime);
+    })
+    return false;
+  }
+  return true;
 }
 document.querySelector(".void-logo").addEventListener("mouseover", spinny);
 document.querySelector(".void-logo").addEventListener("mouseout", stopSpinny);

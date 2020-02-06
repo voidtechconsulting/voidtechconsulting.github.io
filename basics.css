@@ -7,6 +7,17 @@
       transform:rotate(360deg);
   }
 }
+@keyframes comeIn {
+  100% {
+    opacity: 1;
+  }
+}
+.comeIn {
+  animation-name: comeIn;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 /* ---- reset ---- */
 * {
   box-sizing: border-box;
@@ -26,7 +37,7 @@ canvas {
 body {
     color: rgb(0, 0, 0);
     font-size: 2rem;
-    background-color: rgb(255, 255, 255);
+    background-color: #202020;
     font-family: 'Lato', sans-serif;
 }
 .white {
@@ -229,6 +240,7 @@ body {
   background-image: linear-gradient(to right, #1e194a ,#581284);
   border: 10px solid white;
   box-shadow: 3px 1px 9px 1px #f1f1f152;
+  opacity: 0;
 }
 .info-student-box {
   background-image: linear-gradient(to right, #2355a0 ,#212480);
@@ -248,6 +260,13 @@ body {
   padding: 6rem 4rem;
   background: #202020;
   box-shadow: 7px 5px 14px 3px #0000006e;
+}
+.client-box-right {
+  position: relative;
+  height: 45rem;
+  padding: 6rem 4rem;
+  background: #202020;
+  box-shadow: 4px 0 14px 3px #0000006e;
 }
 .void-text-wrapper {
   width: 49%;
@@ -282,6 +301,10 @@ body {
 .women-wrapper {
   display: flex;
   justify-content: center;
+}
+.client-flex-right {
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -325,11 +348,15 @@ body {
 }
 .poly {
   height: 20rem;
-  margin-top: -5rem;
+  margin-top: -20rem;
   background-color: #323140;
   clip-path: polygon(50% 38%, 0% 100%, 100% 100%);
 }
 /* Student specific */
+#student {
+  background-color: white;
+  padding-bottom: 15rem;
+}
 .dots-box {
   text-align: center;
   display: flex;
@@ -356,19 +383,23 @@ body {
   background-color: #36385f;
   border: 2px solid black;
   box-shadow: 7px 5px 14px 3px #0000006e;
-  padding: 4rem;
+  padding: 3rem 4rem;
+  opacity: 0;
 }
 .mission-desc {
   font-size: 2.5rem;
   color: white;
+  line-height: 2;
 }
 .business-decor {
   margin-bottom: 2rem;
+  margin-top: 2rem;
   height: 6rem;
   background-color: white;
 }
-#whatwedo {
-  background-color: #dcdcdc;
+
+#timeline {
+  background-color: white;
 }
 
 .timeline-boxes {
@@ -393,6 +424,15 @@ body {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
+.timeline-box__picture--1 {
+  background-image: url(./joshua-sukoff-rISC_BEGGVw-unsplash.jpg);
+}
+.timeline-box__picture--3 {
+  background-image: url(./paula-may-AJqeO_-ifx0-unsplash.jpg);
+}
+.timeline-box__picture--2 {
+  background-image: url(./matt-duncan-IUY_3DvM__w-unsplash.jpg);
+}
 .timeline-box__heading {
   font-size: 2.8rem;
   font-weight: 300;
@@ -400,11 +440,17 @@ body {
   text-align: right;
   color: #fff;
   position: absolute;
-  top: 12rem;
+  top: 14rem;
   right: 2rem;
   width: 75%;
 }
 .timeline-box__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(0, 217, 255, 0.85), rgba(48, 196, 255, 0.85));
+}
+.timeline-box__heading-span--2 {
+  background-image: linear-gradient(to right bottom, #b700ff, #ac2bcc);
+}
+.timeline-box__heading-span--3 {
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
 }
 .timeline-box__heading-span {
@@ -420,17 +466,27 @@ body {
 .timeline-box__details  {
   text-align: center;
 }
+
 .timeline-box__side {
-  width: 40rem;
+  width: 34rem;
   background-color: #fff;
-  height: 52rem;
-  transition: all .8s ease;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  height: 48rem;
+  position: relative;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 200ms;
+  opacity: 0;
+}
+.timeline-box__side:hover {
+  transform: scale(1.05);
+}
+
+/* footer */
+#footer {
+  height: 20rem;
+  color: white;
+  font-size: 3rem;
+  font-style: italic;
 }
