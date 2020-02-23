@@ -1,5 +1,5 @@
-paper.install(window)          
-paper.setup('myCanvas')
+paper.install(window);          
+paper.setup('myCanvas');
 // The amount of segment points we want to create:
 var amount = 5;
 

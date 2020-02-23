@@ -1,7 +1,8 @@
 window.onscroll = function() {scrollFunction()};
 var loadTimeline = true;
 var loadCommunity = true;
-var loadLearnMore = true;
+var loadLeft = true;
+var loadRight = true;
 function scrollFunction() {
   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     document.getElementById("navbar").classList.add("navbar-solid");
@@ -10,7 +11,8 @@ function scrollFunction() {
   }
   loadTimeline = checkInView(loadTimeline, "timeline", ".timeline-box__side", "comeIn");
   loadCommunity = checkInView(loadCommunity, "mission", ".mission-box", "comeIn")
-  loadLearnMore = checkInView(loadLearnMore, "learn-more", ".info-box-content", "comeIn")
+  loadLeft = checkInView(loadLeft, "student", ".left", "comeLeft")
+  loadRight = checkInView(loadRight, "student", ".right", "comeRight")
 }
 function checkInView(notInView, section, box, anime) {
   if (notInView && document.getElementById(section).getBoundingClientRect().top + 100 < document.documentElement.clientHeight) {
