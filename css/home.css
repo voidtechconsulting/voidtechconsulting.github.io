@@ -98,17 +98,28 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.flex-pages {
-  width: 30rem;
+.nav-links {
+  width: 50rem;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
   color: #FFFFFF;
 }
+.nav-links .active {
+  color: #37D6B9;
+}
+/* remove bullet points */
+ul {
+  list-style: none outside none;
+}
+/* remove link coloring */
+a {
+  color: unset;
+}
 .void-logo:hover{
   fill: white;
 }
-.flex-pages-item:hover {
+.nav-link:hover {
   color: #37D6B9;
 }
 .site-brand {
