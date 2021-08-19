@@ -78,6 +78,11 @@ body {
 .white-text {
   color: white !important;
 }
+
+.site-max-width {
+  max-width: 1400px;
+  margin: auto;
+}
 .navbar {
   border-bottom: 1px solid white;
   position: fixed;
@@ -85,8 +90,6 @@ body {
   width: 100%;
   padding-top: .75rem;
   padding-bottom: 1.25rem;
-  padding-left: 24rem;
-  padding-right: 24rem;
   z-index: 2;
   background-image: linear-gradient(to bottom, #141212, #00000041);
 }
