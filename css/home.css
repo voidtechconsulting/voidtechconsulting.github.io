@@ -70,7 +70,7 @@ body {
     color: rgb(0, 0, 0);
     font-size: 2rem;
     background-color: #ffffff;
-    font-family: 'Lato', sans-serif;
+    font-family: Raleway, sans-serif;
 }
 .white {
   background-color: white !important;
@@ -482,6 +482,28 @@ a {
 }
 .timeline-box__side:hover {
   transform: scale(1.05);
+}
+
+section {
+  padding: 8rem;
+}
+
+#about-us {
+  background: rgb(118, 130, 153);
+  color: rgb(255, 255, 255);
+}
+
+#about-us p {
+  font-size: 3rem;
+  margin: 3rem;
+}
+
+/* section headings */
+.section-heading {
+  text-shadow: rgba(0, 0, 0, 0.25) 2px 2px 4px;
+  font-weight: 400;
+  font-size: 6rem;
+  text-transform: uppercase;
 }
 
 /* footer */
