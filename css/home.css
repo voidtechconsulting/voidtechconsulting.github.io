@@ -516,12 +516,19 @@ section {
 
 /* footer */
 #footer {
-  height: 20rem;
-  color: white;
-  font-size: 3rem;
-  font-style: italic;
+  padding: 4rem;
+  height: 12rem;
+  color: #BFC3CD;
+  font-size: 2rem;
   margin: 0 auto;
   background-color: #0C1830;
+}
+#footer a {
+  font-weight: 700;
+}
+#footer i {
+  font-size: 4rem;
+  margin: 0 1rem;
 }
 .footer-box {
   width: 70%;
