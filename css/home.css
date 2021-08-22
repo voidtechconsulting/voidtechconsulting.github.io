@@ -425,6 +425,7 @@ a {
   height: 7rem;
   text-shadow: 1px 1px 3px #0000006e;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .timeline-box-bottom  {
