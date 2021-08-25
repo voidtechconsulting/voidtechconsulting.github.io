@@ -90,7 +90,7 @@ particlesJS("particles-js", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
-  document.querySelector('#site-name').classList.add("show");
+  document.querySelector('#site-name-animated').classList.add("show");
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
