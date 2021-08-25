@@ -50,22 +50,6 @@
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
-/* ---- reset ---- */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-a {
-  text-decoration: none;
-}
-html {
-  font-size: 62.5%;
-}
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
 body {
     color: rgb(0, 0, 0);
     font-size: 2rem;
@@ -111,14 +95,7 @@ body {
 .nav-links .active {
   color: #37D6B9;
 }
-/* remove bullet points */
-ul {
-  list-style: none outside none;
-}
-/* remove link coloring */
-a {
-  color: unset;
-}
+
 .void-logo:hover{
   fill: white;
 }
