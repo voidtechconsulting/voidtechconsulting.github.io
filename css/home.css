@@ -102,7 +102,7 @@ body {
   justify-content: space-between;
 }
 .nav-links {
-  width: 50rem;
+  width: 35rem;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
