@@ -639,6 +639,10 @@ section {
   background-color: #586682;
 }
 
+.events-text div {
+  padding: 0.2rem 0;
+}
+
 .events-date {
   font-weight: 600;
   font-size: 2.5rem;
