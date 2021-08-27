@@ -246,36 +246,22 @@ body {
   margin-right: 7.5rem;
 }
 
-#site-name-static {
-  display: none;
-  color: #EAE8FF;
-  position: relative; 
-  letter-spacing: 3rem;
-}
-
-@media screen and (max-width: 1100px) {
-  #site-name-animated {
-    display: none;
-  }
-  #site-name-static {
-    display: block;
+@media screen and (max-width: 700px) {
+  #site-name-animated span{
+    margin-right: 0;
   }
 }
 
-@media screen and (max-width: 900px) {
-  #site-name-static {
+@media screen and (max-width: 550px) {
+  #site-name-animated span{
     font-size: 7rem;
   }
 }
-
-@media screen and (max-width: 700px) {
-  #site-name-static {
-    font-size: 4.5rem;
-    letter-spacing: 0.5rem;
+@media screen and (max-width: 450px) {
+  #site-name-animated span{
+    font-size: 5rem;
   }
 }
-
-
 
 .header-desc {
   color: white;
