@@ -565,8 +565,18 @@ body {
   width: 60%;
 }
 
+@media screen and (max-width: 900px) {
+  .timeline-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .timeline-box {
+    margin-bottom: 4rem;
+  }
+}
+
 section {
-  padding: 8rem;
+  padding: 8rem 4rem;
 }
 
 #about-us {
