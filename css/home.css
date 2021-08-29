@@ -665,6 +665,12 @@ section {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 400px) {
+  .events-section {
+    flex-direction: column;
+  }
+}
+
 .application-link {
   color: #586682;
 }
