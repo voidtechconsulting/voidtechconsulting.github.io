@@ -8,6 +8,7 @@
     <title>VOID Tech Consulting</title>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="/css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Forum|Lato:400,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +19,7 @@
     <div id="particles-js"></div>
     <nav id="navbar" class="navbar">
         <div class="site-max-width">
-            <div class="flexy">
+            <div class="flexy nav-flex">
                 <div class="logo-box">
                     <svg class="void-logo" xmlns="http://www.w3.org/2000/svg" width="486" height="486"
                         viewBox="0 0 486 486">
@@ -37,15 +38,17 @@
                         VOID
                     </div>
                 </div>
+                <div class="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul class="flexy nav-links">
                     <li class="nav-link">
                         <a href="#about-us">About Us</a>
                     </li>
                     <li class="nav-link">
                         <a href="#student-roles">Student Roles</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#get-in-touch">Get In Touch</a>
                     </li>
                     <li class="nav-link active">
                         <a href="#apply">Apply</a>
@@ -57,7 +60,7 @@
     <div class="heading-box">
         <div class="zoomInDown">
             <div class="title">
-                <div id="site-name" class="">
+                <div id="site-name-animated" class="">
                     <span class="c2" style="transition-delay: 400ms;">V</span>
                     <span class="c3" style="transition-delay: 466.667ms;">O</span>
                     <span class="c4" style="transition-delay: 66.6667ms;">I</span>
@@ -110,7 +113,7 @@
                     <div class="timeline-box-bottom">
                         <p>Product Managers spearhead our client interactions and content strategy. In this
                             cross-functional role, students develop their communication skills working with clients,
-                            designers and developers to ensure the product we produce meets all of our client's needs.
+                            designers and developers to ensure the final product meets all of our client's needs.
                         </p>
                         <button href="#apply">Apply</button>
                     </div>
@@ -138,67 +141,16 @@
                     </div>
                     <div class="timeline-box-bottom">
                         <p>Designers get the chance to build their portfolio working with a small team and a real
-                            client. New designers also recieve attend workshops to learn instustry skills and best
-                            practices and recive regular feedback on their work from experienced student designers. </p>
+                            client. New designers also attend workshops to learn instustry skills and receive regular feedback on their work from experienced student designers. </p>
                         <button href="#apply">Apply</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="get-in-touch"></section>
     <section id="apply">
         <div class="site-max-width">
-            <h2 class="section-heading">Timeline</h2>
-            <div class="application-steps">
-                <div class="application-step">
-                    <h3 class="step-number">
-                        1.
-                    </h3>
-                    <div class="step-text">
-                        <div class="step-heading">
-                            Learn More
-                        </div>
-
-                        <div class="step-description">
-                            Learn more about VOID at festifall and mass meetings!
-                        </div>
-                    </div>
-                </div>
-                <div class="application-step">
-                    <h3 class="step-number">
-                        2.
-                    </h3>
-                    <div class="step-text">
-                        <div class="step-heading">
-                            Begin Curriculum
-                        </div>
-
-                        <div class="step-description">
-                            Begin attending the 10-week web-development curriculum, where you will learn HTML, CSS,
-                            Wordpress, and other valuable skills. You will finish the curriculum by using your new
-                            skills to develop your own personal
-                            portfolio website.
-                        </div>
-                    </div>
-                </div>
-                <div class="application-step">
-                    <h3 class="step-number">
-                        3.
-                    </h3>
-                    <div class="step-text">
-                        <div class="step-heading">
-                            Apply for Projects
-                        </div>
-
-                        <div class="step-description">
-                            At the end of the curriculum, complete an application to be on a project team during the
-                            Winter semester, where you will work with a team to redevelop the website for one of our
-                            clients.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="section-heading">Application Timeline</h2>
             <div class="events-section">
                 <div class="events-box">
                     <div class="events-header">
@@ -208,19 +160,12 @@
                     </div>
                     <div class="events-date"> Festifall </div>
                     <div class="events-text">
-                        <div class="events-title"> August 31st </div>
-                        <div class="events-description"> Tuesday, 5-8pm EST</div>
-                        <div class="events-location"> North Campus </div>
-                    </div>
-                    <div class="events-text">
-                        <div class="events-title"> September 1st </div>
-                        <div class="events-description"> Tuesday, 5-8pm EST</div>
-                        <div class="events-location"> Central Campus </div>
-                    </div>
-                    <div class="events-text">
-                        <div class="events-title"> September 2nd </div>
-                        <div class="events-description"> Tuesday, 5-8pm EST</div>
-                        <div class="events-location"> Central Campus </div>
+                        <div class="events-title"> September 3rd </div>
+                        <div class="events-description"> 5-8pm EST</div>
+                        <div class="events-description"> Central Campus Diag </div>
+                        <div class="events-location application-link">
+                            <a href="https://forms.gle/dkj8gcGueXSN834z7">Join our email list</a>
+                        </div>
                     </div>
                 </div>
                 <div class="events-box">
@@ -229,7 +174,7 @@
                         </div>
                         <div class="events-line"> </div>
                     </div>
-                    <div class="events-date"> Mass Meeting </div>
+                    <div class="events-date"> Mass Meetings </div>
                     <div class="events-text">
                         <div class="events-title"> September 7th </div>
                         <div class="events-description"> Wednesday, 6-7pm EST</div>
@@ -250,8 +195,9 @@
                     <div class="events-date"> Apply </div>
                     <div class="events-text">
                         <div class="events-title"> September 13th </div>
-                        <div class="events-description"> Monday, 12AM EST</div>
-                        <div class="events-location application-link"> <a href="https://www.google.com/"> Designer
+                        <div class="events-description"> Monday, 12am EST</div>
+                        <div class="events-description">Application links coming soon!</div>
+                        <!-- <div class="events-location application-link"> <a href="https://www.google.com/"> Designer
                                 Application Link </a>
                         </div>
                         <div class="events-location application-link"> <a href="https://www.google.com/"> Product
@@ -259,7 +205,8 @@
                                 Link </a> </div>
                         <div class="events-location application-link"> <a href="https://www.google.com/"> Development
                                 Lead Application
-                                Link </a></div>
+                                Link </a>
+                        </div> -->
                     </div>
                 </div>
                 <div class="events-box">
@@ -298,6 +245,7 @@
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="/js/home.js"></script>
+    <script src="/js/navbar.js"></script>
 </body>
 
 </html>
